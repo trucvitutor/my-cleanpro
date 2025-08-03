@@ -1,0 +1,14 @@
+.breadcrumb-content a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb-content a:hover {
+  color: #e50ed3; /* Màu vàng khi hover */
+}
+.breadcrumb-content {
+  background-color: #0e612f;
+  color: #dfe9ef;
+  padding: 60px;
+}

@@ -1,0 +1,177 @@
+/* Styling chung cho container */
+
+.breadcrumb-content-after a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb-content-after a:hover {
+  color: #e50ed3; /* Màu vàng khi hover */
+}
+.breadcrumb-content-after {
+  background-color: #0e612f;
+  color: #dfe9ef;
+  padding: 60px;
+}
+.breadcrumb-content-after h2 {
+  padding: 0px 80px;
+}
+.breadcrumb-content-after p {
+  padding: 0px 80px;
+}
+
+.after-construction-cleaning-container {
+  font-family: "Inter", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling cho tiêu đề h1 */
+.after-construction-cleaning-container h1 {
+  color: #2c3e50;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  padding: 0px 70px;
+}
+
+/* Styling cho các đoạn văn bản */
+.after-construction-cleaning-container p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+  padding: 0px 100px;
+}
+
+/* --- Bố cục 5 cột Responsive với CSS Grid --- */
+
+.content-columns {
+  display: grid;
+  gap: 20px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.column-item {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f4f7f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.column-item h3 {
+  color: #34495e;
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+/* --- Media Queries để điều chỉnh số cột theo breakpoint của bạn --- */
+
+/* Mặc định cho màn hình nhỏ (mobile-first): 1 cột */
+.content-columns {
+  grid-template-columns: 1fr;
+}
+
+/* Từ 365px trở lên: 2 cột */
+@media (min-width: 365px) {
+  .content-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .after-construction-cleaning-container p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+    padding: 0px 70px;
+  }
+  .after-construction-cleaning-container h1 {
+    color: #2c3e50;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  .breadcrumb-content-after h2 {
+    padding: 0px 80px;
+  }
+  .breadcrumb-content-after p {
+    padding: 0px 80px;
+  }
+}
+
+/* Từ 472px trở lên: 3 cột */
+@media (min-width: 472px) {
+  .content-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .after-construction-cleaning-container p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+  }
+  .after-construction-cleaning-container h1 {
+    color: #2c3e50;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  .breadcrumb-content-after h2 {
+    padding: 0px 80px;
+  }
+  .breadcrumb-content-after p {
+    padding: 0px 80px;
+  }
+}
+
+/* Từ 576px trở lên: 4 cột */
+@media (min-width: 576px) {
+  .content-columns {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Từ 768px trở lên: 5 cột */
+@media (min-width: 768px) {
+  .content-columns {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Styling cho tiêu đề h2 */
+.section-title {
+  color: #2980b9;
+  font-size: 1.8em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 5px;
+  padding: 0px 80px;
+}
+
+/* Styling cho danh sách */
+.cleaning-list {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.cleaning-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  padding: 0px 60px;
+}
+
+/* Styling cho container hình ảnh */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

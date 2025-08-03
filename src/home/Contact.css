@@ -1,0 +1,117 @@
+/* Base styles for Contact component */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 40px; /* Khoảng cách với phần trên */
+}
+
+.contact-box {
+  border: 2px dashed #0d7b4b; /* Viền nét đứt màu đỏ */
+  padding: 25px 20px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  background-color: #a6f1c6; /* Màu nền nhạt */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 0px 100px;
+}
+
+.contact-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(50, 110, 23); /* Màu đỏ đậm cho tiêu đề */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column; /* Xếp dọc trên mobile */
+  gap: 15px; /* Khoảng cách giữa các dòng */
+  align-items: center; /* Căn giữa các mục */
+}
+
+.contact-person {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.contact-icon {
+  color: #0da44c; /* Màu xanh cho icon */
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.contact-person a {
+  color: #199b0f; /* Màu xanh cho số điện thoại */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-person a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+
+/* Small devices (phones, 472px and up) */
+@media (min-width: 472px) {
+  .contact-title {
+    font-size: 1.3em;
+  }
+  .contact-details {
+    flex-direction: row; /* Xếp ngang trên màn hình lớn hơn */
+    justify-content: center; /* Căn giữa các mục khi xếp ngang */
+    gap: 30px; /* Tăng khoảng cách khi xếp ngang */
+  }
+  .contact-person {
+    font-size: 1.2em;
+  }
+  .contact-box {
+    padding: 30px 25px;
+  }
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+  .contact-box {
+    padding: 30px 25px;
+  }
+  .contact-title {
+    font-size: 1.4em;
+  }
+  .contact-person {
+    font-size: 1.3em;
+  }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+  .contact-box {
+    padding: 35px 30px;
+  }
+  .contact-title {
+    font-size: 1.5em;
+  }
+  .contact-person {
+    font-size: 1.4em;
+  }
+}
+
+/* Extra large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+  .contact-box {
+    padding: 10px 200px;
+  }
+  .contact-title {
+    font-size: 1.6em;
+  }
+  .contact-person {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,353 @@
+.breadcrumb-content-rem a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb-content-rem a:hover {
+  color: #e50ed3; /* Màu vàng khi hover */
+}
+.breadcrumb-content-rem {
+  background-color: #0e612f;
+  color: #dfe9ef;
+  padding: 60px;
+}
+.breadcrumb-section-rem h2 {
+  padding: 0px 70px;
+}
+.breadcrumb-section-rem p {
+  padding: 0px 70px;
+}
+/* Base styles - Áp dụng cho màn hình nhỏ nhất (hoặc mặc định) */
+.mattress-cleaning-container {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa cho desktop */
+  margin: 0 auto;
+  padding: 15px; /* Giảm padding cho màn hình nhỏ */
+  color: #333;
+}
+
+.intro-section p,
+.why-clean-section p,
+.conclusion-section p {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 0.95em; /* Kích thước chữ nhỏ hơn cho mobile */
+  padding: 0px 100px;
+}
+
+.section-title {
+  color: #0056b3;
+  font-size: 1.8em; /* Kích thước tiêu đề nhỏ hơn cho mobile */
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+.why-clean-section ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.why-clean-section li {
+  margin-bottom: 15px;
+}
+
+.reason-title {
+  color: #007bff;
+  font-size: 1.3em; /* Kích thước tiêu đề lý do nhỏ hơn */
+  margin-bottom: 8px;
+  padding: 0px 100px;
+}
+
+.cleaning-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Giảm margin ảnh */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-details-section {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.service-category {
+  margin-bottom: 25px;
+}
+
+.service-category-title {
+  color: #28a745;
+  font-size: 1.4em; /* Kích thước tiêu đề dịch vụ nhỏ hơn */
+  margin-bottom: 10px;
+  padding: 0px 100px;
+}
+
+.service-item-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.service-item-list li {
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 0.9em; /* Kích thước chữ nhỏ hơn */
+  padding: 0px 100px;
+}
+
+.process-section {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.process-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.process-list li {
+  margin-bottom: 12px;
+  padding: 0px 100px;
+}
+
+.process-list li p {
+  margin: 0;
+  font-size: 0.95em;
+}
+
+.process-list li strong {
+  color: #007bff;
+  font-size: 1em; /* Giữ kích thước mặc định */
+}
+
+.why-choose-us-section,
+.frequency-section,
+.conclusion-section {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.reason-list,
+.frequency-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  /* padding: 0px 100px; */
+}
+
+.reason-list li,
+.frequency-list li {
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 0.9em;
+  padding: 0px 100px;
+}
+
+.reason-list li strong,
+.frequency-list li strong {
+  color: #333;
+}
+
+.note-text {
+  font-style: italic;
+  color: #777;
+  margin-top: 10px;
+  font-size: 0.85em;
+  padding: 0px 100px;
+}
+
+/* Responsive styles */
+
+/* Extra small devices (phones, 365px and up) */
+@media (min-width: 365px) {
+  .mattress-cleaning-container {
+    padding: 20px;
+  }
+
+  .intro-section p,
+  .why-clean-section p,
+  .conclusion-section p {
+    font-size: 1em;
+  }
+  .section-title {
+    font-size: 2em;
+  }
+  .reason-title {
+    font-size: 1.4em;
+  }
+  .service-category-title {
+    font-size: 1.5em;
+  }
+  .service-item-list li {
+    font-size: 0.95em;
+  }
+  .process-list li p {
+    font-size: 1em;
+  }
+  .reason-list li,
+  .frequency-list li {
+    font-size: 0.95em;
+  }
+  .note-text {
+    font-size: 0.9em;
+  }
+}
+
+/* Small devices (phones, 472px and up) */
+@media (min-width: 472px) {
+  .mattress-cleaning-container {
+    padding: 25px;
+  }
+  .section-title {
+    font-size: 2.2em;
+  }
+  .reason-title {
+    font-size: 1.5em;
+  }
+  .service-category-title {
+    font-size: 1.6em;
+  }
+  .breadcrumb-section-rem h2 {
+    padding: 0px 100px;
+  }
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+  .mattress-cleaning-container {
+    padding: 30px;
+  }
+  .section-title {
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .reason-title {
+    font-size: 1.6em;
+  }
+  .service-category-title {
+    font-size: 1.7em;
+  }
+  .service-item-list {
+    padding-left: 30px;
+  }
+  .reason-list,
+  .frequency-list {
+    padding-left: 30px;
+  }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+  .mattress-cleaning-container {
+    padding: 40px;
+  }
+  .intro-section p,
+  .why-clean-section p,
+  .conclusion-section p {
+    font-size: 1.05em;
+  }
+  .section-title {
+    font-size: 2.8em;
+  }
+  .reason-title {
+    font-size: 1.7em;
+  }
+  .service-category-title {
+    font-size: 1.8em;
+  }
+  .service-item-list li {
+    font-size: 1em;
+  }
+  .process-list li p {
+    font-size: 1.05em;
+  }
+  .reason-list li,
+  .frequency-list li {
+    font-size: 1em;
+  }
+  .note-text {
+    font-size: 0.95em;
+  }
+  /* Optional: Chia cột cho các mục dịch vụ trên desktop */
+  .service-details-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    gap: 30px; /* Khoảng cách giữa các cột */
+  }
+  .service-category {
+    margin-bottom: 0; /* Bỏ margin dưới khi đã có gap */
+  }
+  /* Căn chỉnh lại tiêu đề nếu chia cột */
+  .service-details-section .section-title {
+    grid-column: 1 / -1; /* Tiêu đề chiếm toàn bộ chiều rộng */
+  }
+}
+
+/* Extra large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mattress-cleaning-container {
+    padding: 50px;
+  }
+  .section-title {
+    font-size: 3em;
+  }
+  .reason-title {
+    font-size: 1.8em;
+  }
+  .service-category-title {
+    font-size: 1.9em;
+  }
+  .intro-section p,
+  .why-clean-section p,
+  .conclusion-section p {
+    font-size: 1.1em;
+  }
+  .process-list li p {
+    font-size: 1.1em;
+  }
+  .reason-list li,
+  .frequency-list li {
+    font-size: 1.05em;
+  }
+  .note-text {
+    font-size: 1em;
+  }
+}
+
+/* Extra extra large devices (larger desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .mattress-cleaning-container {
+    padding: 60px;
+  }
+  .section-title {
+    font-size: 3.2em;
+  }
+  .reason-title {
+    font-size: 1.9em;
+  }
+  .service-category-title {
+    font-size: 2em;
+  }
+  .intro-section p,
+  .why-clean-section p,
+  .conclusion-section p {
+    font-size: 1.15em;
+  }
+  .process-list li p {
+    font-size: 1.15em;
+  }
+  .reason-list li,
+  .frequency-list li {
+    font-size: 1.1em;
+  }
+  .note-text {
+    font-size: 1.05em;
+  }
+}

@@ -1,0 +1,527 @@
+/* IndustrialCleaning.css */
+.breadcrumb-content-indus a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb-content-indus a:hover {
+  color: #e50ed3; /* Màu vàng khi hover */
+}
+.breadcrumb-content-indus {
+  background-color: #0e612f;
+  color: #dfe9ef;
+  padding: 60px;
+}
+
+/* Base Styles (for screens >= 1200px) */
+.industrial-cleaning-container {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.text-section p,
+.additional-text,
+.workflow-intro,
+.trusted-provider-intro,
+.conclusion-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.section-title,
+.benefits-title,
+.categories-title,
+.workflow-title,
+.trusted-provider-title,
+.conclusion-title {
+  color: #28a745; /* Green color for titles */
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Image Section */
+.image-section {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.benefits-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  margin-bottom: 20px;
+}
+
+.benefits-list li strong {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.benefits-list li p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Categories Section */
+.categories-section {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.categories-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.categories-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Additional Services Section */
+.additional-services-section {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.additional-image-container {
+  margin-bottom: 20px;
+}
+
+.additional-image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.additional-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Workflow Section */
+.workflow-section {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.workflow-title {
+  color: #28a745;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.workflow-intro {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.workflow-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.workflow-list li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.workflow-list li strong {
+  display: inline;
+  color: #333;
+}
+
+/* Trusted Provider Section */
+.trusted-provider-section {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.trusted-provider-title {
+  color: #28a745;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.trusted-provider-intro {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.trusted-provider-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.trusted-provider-list li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.trusted-provider-image-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.trusted-provider-image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Conclusion Section */
+.conclusion-section {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.conclusion-title {
+  color: #28a745;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.conclusion-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Call to Action */
+.call-to-action {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.call-button {
+  background-color: #fff;
+  color: #28a745;
+  border: none;
+  padding: 12px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.call-button:hover {
+  background-color: #e0e0e0;
+}
+
+.phone-number {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1199px) {
+  .industrial-cleaning-container {
+    margin: 15px auto;
+    padding: 18px;
+  }
+  .section-title,
+  .benefits-title,
+  .categories-title,
+  .workflow-title,
+  .trusted-provider-title,
+  .conclusion-title {
+    font-size: 26px;
+  }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 991px) {
+  .section-title,
+  .benefits-title,
+  .categories-title,
+  .workflow-title,
+  .trusted-provider-title,
+  .conclusion-title {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .text-section p,
+  .additional-text,
+  .workflow-intro,
+  .trusted-provider-intro,
+  .conclusion-text,
+  .benefits-list li p,
+  .categories-list li,
+  .workflow-list li,
+  .trusted-provider-list li {
+    font-size: 15px;
+  }
+  .benefits-list li strong {
+    font-size: 17px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .industrial-cleaning-container {
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .section-title,
+  .benefits-title,
+  .categories-title,
+  .workflow-title,
+  .trusted-provider-title,
+  .conclusion-title {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .text-section p,
+  .benefits-list li p,
+  .categories-list li,
+  .additional-text,
+  .workflow-intro,
+  .workflow-list li,
+  .trusted-provider-intro,
+  .trusted-provider-list li,
+  .conclusion-text {
+    font-size: 14px;
+  }
+
+  .benefits-list li strong {
+    font-size: 16px;
+  }
+
+  .call-button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .phone-number {
+    font-size: 22px;
+  }
+
+  .workflow-list li {
+    margin-bottom: 10px;
+  }
+
+  .trusted-provider-list li {
+    margin-bottom: 10px;
+  }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 575px) {
+  .industrial-cleaning-container {
+    padding: 12px;
+  }
+
+  .section-title,
+  .benefits-title,
+  .categories-title,
+  .workflow-title,
+  .trusted-provider-title,
+  .conclusion-title {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+  }
+
+  .text-section p,
+  .benefits-list li p,
+  .categories-list li,
+  .additional-text,
+  .workflow-intro,
+  .workflow-list li,
+  .trusted-provider-intro,
+  .trusted-provider-list li,
+  .conclusion-text {
+    font-size: 13px;
+  }
+
+  .benefits-list li strong {
+    font-size: 15px;
+  }
+
+  .call-button {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+
+  .phone-number {
+    font-size: 20px;
+  }
+}
+
+/* For screens smaller than 472px */
+@media (max-width: 471px) {
+  .industrial-cleaning-container {
+    padding: 10px;
+  }
+
+  .section-title,
+  .benefits-title,
+  .categories-title,
+  .workflow-title,
+  .trusted-provider-title,
+  .conclusion-title {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .text-section p,
+  .benefits-list li p,
+  .categories-list li,
+  .additional-text,
+  .workflow-intro,
+  .workflow-list li,
+  .trusted-provider-intro,
+  .trusted-provider-list li,
+  .conclusion-text {
+    font-size: 12px;
+  }
+
+  .benefits-list li strong {
+    font-size: 14px;
+  }
+
+  .call-button {
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+
+  .phone-number {
+    font-size: 18px;
+  }
+
+  .workflow-list li {
+    margin-bottom: 7px;
+  }
+
+  .trusted-provider-list li {
+    margin-bottom: 5px;
+  }
+}
+
+/* For screens smaller than 365px */
+@media (max-width: 364px) {
+  .industrial-cleaning-container {
+    padding: 8px;
+  }
+  .breadcrumb-content-indus h2 {
+    padding: 0px 50px;
+  }
+  .breadcrumb-content-indus p {
+    padding: 0px 60px;
+  }
+
+  .section-title,
+  .benefits-title,
+  .categories-title,
+  .workflow-title,
+  .trusted-provider-title,
+  .conclusion-title {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    padding: 0px 100px;
+  }
+
+  .text-section p,
+  .benefits-list li p,
+  .categories-list li,
+  .additional-text,
+  .workflow-intro,
+  .workflow-list li,
+  .trusted-provider-intro,
+  .trusted-provider-list li,
+  .conclusion-text {
+    font-size: 11px; /* Slightly smaller text for very small screens */
+    padding: 0px 100px;
+  }
+
+  .benefits-list li strong {
+    font-size: 13px;
+    padding: 0px 80px;
+  }
+
+  .call-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .phone-number {
+    font-size: 16px;
+  }
+}

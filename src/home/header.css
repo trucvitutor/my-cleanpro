@@ -1,0 +1,415 @@
+/* --- RESET CSS --- */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- GENERAL STYLING --- */
+.main-header {
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  position: relative; /* Quan trọng để z-index hoạt động đúng */
+  z-index: 1000; /* Đảm bảo header nằm trên cùng */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* --- HEADER ROW 1 (SOCIAL + CONTACT) --- */
+.header-row-1 {
+  background-color: #0d821a;
+  color: white;
+  padding: 10px 0;
+}
+
+.header-row-1 .row-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons .social-icon {
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+.social-icons .social-icon:hover {
+  opacity: 0.8;
+}
+
+.contact-info-header {
+  display: flex;
+  font-size: 15px;
+}
+.contact-info-header .contact-item {
+  margin-left: 25px;
+  white-space: nowrap;
+}
+.contact-info-header .contact-item:first-child {
+  margin-left: 0;
+}
+.contact-info-header .contact-item i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* --- HEADER ROW 2 (LOGO + NAVIGATION) --- */
+.header-row-2 {
+  background-color: #fff;
+  padding: 15px 100px 0px 40px; /* Padding mặc định cho desktop */
+  border-bottom: 1px solid #eee;
+  position: relative; /* Cần thiết cho mobile menu absolute positioning */
+}
+.header-row-2 .row-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0; /* Đảm bảo logo không bị co lại quá mức */
+}
+.logo img {
+  max-height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+.logo .tagline {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* --- HAMBURGER MENU --- */
+.hamburger-menu {
+  display: none; /* Ẩn mặc định trên desktop */
+  cursor: pointer;
+  font-size: 28px;
+  color: #333;
+  margin-right: 0; /* Đảm bảo không có margin phải mặc định nào */
+  z-index: 1001; /* Đảm bảo hamburger menu nằm trên cùng */
+  flex-shrink: 0; /* Đảm bảo hamburger menu không bị co lại */
+}
+
+@media (max-width: 992px) {
+  /* HIỆN HAMBURGER TRÊN MỌI MÀN HÌNH NHỎ HƠN HOẶC BẰNG 992PX */
+  .hamburger-menu {
+    display: block; /* Đảm bảo luôn hiển thị trên mobile và tablet */
+  }
+}
+
+/* --- NAVIGATION --- */
+.main-navigation {
+  /* Mặc định cho desktop */
+  display: block; /* Hiển thị navigation trên desktop */
+}
+
+.main-navigation ul {
+  list-style: none;
+  display: flex; /* Dùng flex cho menu ngang trên desktop */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  /* Bỏ border-radius và box-shadow ở đây để áp dụng cho dropdown riêng */
+}
+
+.main-navigation ul li {
+  margin-left: 25px;
+  position: relative; /* Quan trọng cho dropdown absolute positioning */
+}
+.main-navigation ul li:first-child {
+  margin-left: 0; /* Loại bỏ margin cho item đầu tiên */
+}
+
+.main-navigation ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 0; /* Padding trên dưới */
+  display: block;
+  transition: color 0.3s ease;
+}
+.main-navigation ul li a:hover {
+  color: #0a7036;
+}
+.main-navigation ul li.dropdown a i {
+  margin-left: 5px;
+  font-size: 12px;
+  vertical-align: middle; /* Căn giữa với text */
+  transition: transform 0.3s ease; /* Thêm transition cho mũi tên */
+}
+
+/* Nút liên hệ */
+.main-navigation ul li .contact-button {
+  background-color: #0a9b2c;
+  color: white !important; /* Đảm bảo màu chữ trắng */
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 15px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Đảm bảo nút không bị vỡ dòng */
+}
+.main-navigation ul li .contact-button:hover {
+  background-color: #0f6c07;
+}
+
+/* --- DROPDOWN MENU (Chung) --- */
+.dropdown-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  min-width: 200px;
+
+  opacity: 0; /* Bắt đầu ẩn với opacity */
+  visibility: hidden; /* Đảm bảo không thể tương tác khi ẩn */
+  transition: opacity 0.3s ease, visibility 0.3s ease, max-height 0.3s ease-out; /* Thêm max-height cho mobile transition */
+  overflow: hidden; /* Để max-height hoạt động tốt */
+  z-index: 1000; /* Đảm bảo dropdown nằm trên các nội dung khác */
+}
+
+.dropdown-menu li a {
+  color: #333;
+  padding: 12px 15px;
+  display: block;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1;
+  color: #1e950b;
+}
+
+/* --- DESKTOP STYLES (min-width: 993px) --- */
+@media (min-width: 993px) {
+  /* Đảm bảo navigation luôn hiển thị trên desktop */
+  .main-navigation {
+    display: block;
+  }
+
+  /* Reset các style mobile có thể ảnh hưởng */
+  .main-navigation.active {
+    max-height: initial; /* Bỏ max-height từ mobile */
+  }
+
+  .main-navigation ul {
+    flex-direction: row; /* Luôn là hàng ngang */
+    box-shadow: none; /* Bỏ shadow nếu nó được áp dụng cho ul */
+  }
+  .main-navigation ul li {
+    border-bottom: none; /* Bỏ border bottom từ mobile */
+  }
+
+  .main-navigation ul li a {
+    padding: 8px 0; /* Padding gốc */
+  }
+
+  /* Desktop dropdown: hover mở dropdown */
+  .dropdown-menu {
+    position: absolute; /* Vị trí tuyệt đối so với cha */
+    top: 100%;
+    left: 0;
+    max-height: 0; /* Ban đầu ẩn bằng max-height để kết hợp với opacity */
+  }
+
+  .main-navigation ul li.dropdown:hover > .dropdown-menu {
+    display: flex; /* Dùng flex để hiển thị dạng cột */
+    flex-direction: column; /* Quan trọng: đảm bảo sổ dọc khi hover */
+
+    opacity: 1; /* Hiện dropdown */
+    visibility: visible;
+    max-height: 500px; /* Đủ lớn để chứa tất cả items */
+  }
+
+  /* Xoay mũi tên khi hover trên desktop */
+  .main-navigation ul li.dropdown:hover > a .fas.fa-caret-down {
+    transform: rotate(180deg);
+  }
+
+  /* Header Row 1 & 3: luôn hiển thị trên desktop */
+  .header-row-1,
+  .header-row-3 {
+    display: block;
+  }
+}
+
+/* --- MOBILE STYLES (max-width: 992px) --- */
+@media (max-width: 992px) {
+  /* Ẩn Header Row 1 & 3 trên mobile */
+  .header-row-1,
+  .header-row-3 {
+    display: none;
+  }
+
+  /* Logo */
+  .logo img {
+    max-height: 200px; /* Giảm max-height của logo trên mobile */
+  }
+  .logo .tagline {
+    display: none; /* Ẩn tagline trên mobile */
+  }
+
+  /* Đảm bảo container của header-row-2 có đủ padding */
+  .header-row-2 .row-content {
+    padding: 0 10px; /* Giảm padding ngang mặc định trên mobile */
+  }
+
+  /* Main Navigation Mobile */
+  .main-navigation {
+    position: absolute; /* Vị trí tuyệt đối so với header-row-2 */
+    top: 100%; /* Nằm ngay dưới header-row-2 */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Để max-height hoạt động */
+    max-height: 0; /* Ẩn navigation menu ban đầu */
+    transition: max-height 0.3s ease-out; /* Hiệu ứng trượt xuống */
+    z-index: 999; /* Đảm bảo dưới header-row-2 nhưng trên nội dung khác */
+  }
+  .main-navigation.active {
+    max-height: 1000px; /* Khi active, mở menu. Điều chỉnh giá trị này nếu menu dài hơn */
+  }
+
+  .main-navigation ul {
+    flex-direction: column; /* Stack dọc các menu item */
+    align-items: flex-start; /* Căn trái */
+    padding: 5px 80px 0px 50px;
+    box-shadow: none; /* Bỏ shadow từ desktop nếu có */
+  }
+  .main-navigation ul li {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    margin-left: 0; /* Bỏ margin */
+    border-bottom: 1px solid #eee; /* Đường kẻ phân cách các mục */
+  }
+  .main-navigation ul li:last-child {
+    border-bottom: none; /* Loại bỏ border cho item cuối */
+  }
+  .main-navigation ul li a {
+    padding: 12px 15px; /* Padding lớn hơn cho cảm ứng */
+    width: 100%;
+    box-sizing: border-box; /* Đảm bảo padding không làm tràn width */
+  }
+
+  /* Mobile Dropdown Menu */
+  .dropdown-menu {
+    position: static; /* Quan trọng: Đẩy nội dung xuống, không nổi lên */
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding-left: 20px; /* Thụt lề các mục con */
+    background-color: #f8f8f8; /* Màu nền khác cho submenu */
+    max-height: 0; /* Ẩn submenu mobile ban đầu */
+    opacity: 1; /* Luôn hiển thị opacity 1 khi mở */
+    visibility: visible; /* Luôn hiển thị visibility khi mở */
+    transition: max-height 0.3s ease-out; /* Hiệu ứng trượt xuống cho submenu */
+  }
+
+  /* Mobile: Hiện dropdown khi class 'open' được thêm bởi React */
+  .dropdown.open > .dropdown-menu {
+    display: flex; /* Dùng flex để hiển thị dạng cột */
+    flex-direction: column; /* Quan trọng: đảm bảo sổ dọc khi click */
+    max-height: 500px; /* Mở submenu mobile, điều chỉnh nếu cần */
+  }
+
+  /* Xoay mũi tên khi dropdown mở trên mobile */
+  .dropdown.open > a .fas.fa-caret-down {
+    transform: rotate(180deg);
+  }
+
+  .main-navigation ul li.dropdown a i {
+    float: right; /* Đẩy mũi tên sang phải */
+    margin-left: auto; /* Đẩy mũi tên sang phải */
+    margin-right: 0; /* Đảm bảo không có margin phải */
+  }
+
+  /* Nút liên hệ trên mobile */
+  .main-navigation ul li .contact-button {
+    margin: 10px 15px; /* Đặt margin độc lập */
+    width: calc(100% - 30px); /* Đảm bảo full width trừ padding/margin */
+    text-align: center;
+    border-radius: 5px; /* Giữ border-radius nếu muốn */
+  }
+}
+
+/* --- SMALL MOBILE ADJUSTMENTS (Dưới 480px) --- */
+@media (max-width: 480px) {
+  /* Điều chỉnh padding cho header-row-2 .row-content để có thêm không gian cho logo và hamburger menu */
+  .header-row-2 .row-content {
+    padding: 8px 5px; /* Giảm padding ngang xuống 5px để tăng không gian cho nội dung */
+  }
+
+  /* Đảm bảo logo không quá lớn trên màn hình rất nhỏ */
+  .logo img {
+    max-height: 200px; /* Giảm kích thước logo nếu cần để tạo thêm không gian */
+  }
+
+  /* Đảm bảo hamburger menu luôn có đủ không gian và không bị đẩy ra ngoài */
+  .hamburger-menu {
+    font-size: 26px; /* Giảm kích thước icon hamburger nếu cần */
+  }
+
+  .main-navigation ul li a {
+    padding: 10px 10px;
+  }
+  .main-navigation ul li .contact-button {
+    width: calc(100% - 20px);
+    margin: 8px 10px;
+    text-align: center;
+  }
+  .main-navigation ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 100px 0px 70px;
+    box-shadow: none;
+  }
+}
+
+/* --- EXTRA SMALL MOBILE ADJUSTMENTS (Dưới 360px) --- */
+@media (max-width: 360px) {
+  .header-row-2 .row-content {
+    padding: 5px 3px; /* Giảm padding ngang xuống 3px cho màn hình cực nhỏ */
+  }
+  .logo img {
+    max-height: 100px; /* Giảm kích thước logo hơn nữa nếu cần */
+  }
+  .hamburger-menu {
+    font-size: 24px; /* Giảm kích thước icon hamburger nhỏ hơn nữa nếu cần */
+  }
+  .main-navigation ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 100px 0px 90px;
+    box-shadow: none;
+  }
+}

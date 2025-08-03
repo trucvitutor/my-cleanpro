@@ -1,0 +1,786 @@
+/* HouseCleaning.css */
+.breadcrumb-content-house a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb-content-house a:hover {
+  color: #e50ed3; /* Màu vàng khi hover */
+}
+.breadcrumb-content-house {
+  background-color: #0e612f;
+  color: #dfe9ef;
+  padding: 60px;
+}
+
+/* General Container */
+.house-cleaning-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Styles for Text Sections (Intro, Title, Description)                       */
+/* -------------------------------------------------------------------------- */
+.text-section {
+  margin-bottom: 20px;
+}
+
+.intro-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.title-section h2 {
+  font-size: 28px;
+  color: #28a745; /* Green color */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center; /* Center on mobile */
+}
+
+.description-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Styles for Image Sections                                                  */
+/* -------------------------------------------------------------------------- */
+.image-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Styles for Benefits Section                                                */
+/* -------------------------------------------------------------------------- */
+.benefits-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.benefits-title {
+  font-size: 26px; /* Kích thước font cho tiêu đề lợi ích */
+  color: #28a745; /* Màu xanh lá cây đậm */
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center; /* Căn giữa trên di động */
+}
+
+.benefit-item {
+  display: flex; /* Dùng flexbox để số và nội dung nằm ngang */
+  align-items: flex-start; /* Căn trên cùng của các mục */
+  margin-bottom: 25px; /* Khoảng cách giữa các lợi ích */
+}
+
+.benefit-number {
+  font-size: 28px; /* Kích thước số lớn */
+  color: #28a745; /* Màu xanh lá cây */
+  font-weight: bold;
+  margin-right: 15px; /* Khoảng cách giữa số và nội dung */
+  flex-shrink: 0; /* Đảm bảo số không bị co lại */
+  width: 40px; /* Chiều rộng cố định cho số */
+  text-align: center;
+}
+
+.benefit-content {
+  flex-grow: 1; /* Cho phép nội dung lấp đầy không gian còn lại */
+}
+
+.benefit-heading {
+  font-size: 18px; /* Kích thước font cho tiêu đề con */
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.benefit-content p {
+  font-size: 15px; /* Kích thước font cho mô tả lợi ích */
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Styles for Service Packages Section                                        */
+/* -------------------------------------------------------------------------- */
+.service-packages-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.service-packages-title {
+  font-size: 26px;
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center; /* Căn giữa trên di động */
+}
+
+.service-package-item {
+  display: flex; /* Dùng flexbox để số và nội dung nằm ngang */
+  align-items: flex-start; /* Căn trên cùng của các mục */
+  margin-bottom: 25px; /* Khoảng cách giữa các gói dịch vụ */
+}
+
+.package-number {
+  font-size: 28px;
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 15px;
+  flex-shrink: 0;
+  width: 40px;
+  text-align: center;
+}
+
+.package-content {
+  flex-grow: 1;
+}
+
+.package-heading {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.package-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Styles for Process Section                                                 */
+/* -------------------------------------------------------------------------- */
+.process-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.process-title {
+  font-size: 26px;
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px; /* Khoảng cách giữa các bước */
+}
+
+.step-number {
+  font-size: 28px;
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 15px;
+  flex-shrink: 0;
+  width: 40px;
+  text-align: center;
+}
+
+.step-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  flex-grow: 1;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Styles for Criteria Section                                                */
+/* -------------------------------------------------------------------------- */
+.criteria-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.criteria-title {
+  font-size: 26px; /* Kích thước font cho tiêu đề tiêu chí */
+  color: #28a745; /* Màu xanh lá cây đậm */
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center; /* Căn giữa trên di động */
+}
+
+.criteria-list {
+  list-style-type: none; /* Loại bỏ dấu chấm mặc định của list */
+  padding: 0; /* Loại bỏ padding mặc định */
+  margin: 0; /* Loại bỏ margin mặc định */
+}
+
+.criteria-list li {
+  font-size: 16px; /* Kích thước font cho từng mục list */
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px; /* Khoảng cách giữa các mục */
+  position: relative; /* Để sử dụng pseudo-elements cho bullet point */
+  padding-left: 25px; /* Khoảng trống cho bullet point tùy chỉnh */
+}
+
+.criteria-list li::before {
+  content: "•"; /* Ký tự bullet point */
+  color: #28a745; /* Màu xanh lá cây cho bullet point */
+  font-weight: bold;
+  font-size: 20px; /* Kích thước bullet point */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Specific styling for the image within this section */
+.criteria-image-section {
+  margin-top: 30px; /* Tăng khoảng cách trên ảnh trong phần này */
+  margin-bottom: 30px; /* Tăng khoảng cách dưới ảnh trong phần này */
+}
+
+/* -------------------------------------------------------------------------- */
+/* Styles for Frequency Section                                               */
+/* -------------------------------------------------------------------------- */
+.frequency-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.frequency-title {
+  font-size: 26px;
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.frequency-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.frequency-list li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.frequency-list li::before {
+  content: "•";
+  color: #28a745;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.frequency-note {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  margin-top: 25px;
+  text-align: justify;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Styles for Conclusion Section                                              */
+/* -------------------------------------------------------------------------- */
+.conclusion-section {
+  margin-top: 40px;
+  margin-bottom: 60px; /* Tăng margin-bottom để có khoảng cách cuối trang */
+  padding: 20px; /* Thêm padding để nội dung không bị sát viền */
+  background-color: #f9f9f9; /* Màu nền nhẹ nhàng cho phần kết luận */
+  border-radius: 8px; /* Bo góc nhẹ */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.conclusion-title {
+  font-size: 28px;
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.conclusion-text {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify; /* Căn đều hai bên */
+}
+
+/* -------------------------------------------------------------------------- */
+/* Responsive adjustments - Mobile First Approach                             */
+/* -------------------------------------------------------------------------- */
+
+/* For Small Phones (>= 360px) */
+@media (min-width: 360px) {
+  .breadcrumb-content-house {
+    background-color: #0e612f;
+    color: #dfe9ef;
+    padding: 30px;
+  }
+  .breadcrumb-content-house h2 {
+    color: #dfe9ef;
+    padding: 0px 75px;
+  }
+  .breadcrumb-content-house p {
+    color: #dfe9ef;
+    padding: 0px 75px;
+  }
+  .intro-section p,
+  .description-section p {
+    font-size: 16.5px;
+    padding: 0px 100px;
+  }
+  .title-section h2 {
+    font-size: 30px;
+    padding: 0px 100px;
+  }
+
+  .benefits-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding: 0px 100px;
+  }
+  .benefit-number {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .benefit-heading {
+    font-size: 19px;
+    padding: 0px 30px;
+  }
+  .benefit-content p {
+    font-size: 15.5px;
+    padding: 0px 80px;
+  }
+
+  .service-packages-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding: 0px 80px;
+  }
+  .package-number {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .package-heading {
+    font-size: 19px;
+    padding: 0px 50px;
+  }
+  .package-content p {
+    font-size: 15.5px;
+    padding: 0px 80px;
+  }
+
+  .process-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+    padding: 0px 100px;
+  }
+  .step-number {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .step-description {
+    font-size: 16.5px;
+    padding: 0px 70px;
+  }
+
+  .criteria-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding: 0px 80px;
+  }
+  .criteria-list li {
+    font-size: 16.5px;
+    margin-bottom: 16px;
+    padding-left: 28px;
+    padding: 0px 80px;
+  }
+  .criteria-list li::before {
+    font-size: 22px;
+  }
+
+  .frequency-title,
+  .conclusion-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+    padding: 0px 70px;
+  }
+  .frequency-list li {
+    font-size: 16.5px;
+    margin-bottom: 16px;
+    padding-left: 28px;
+    padding: 0px 80px;
+  }
+  .frequency-list li::before {
+    font-size: 22px;
+  }
+  .frequency-note,
+  .conclusion-text {
+    font-size: 16.5px;
+    padding: 0px 80px;
+  }
+}
+
+/* For Larger Phones (>= 460px) */
+@media (min-width: 460px) {
+  .intro-section p,
+  .description-section p {
+    font-size: 17px;
+  }
+  .title-section h2 {
+    font-size: 32px;
+  }
+
+  .benefits-title {
+    font-size: 30px;
+  }
+  .benefit-number {
+    font-size: 32px;
+  }
+  .benefit-heading {
+    font-size: 20px;
+  }
+  .benefit-content p {
+    font-size: 16px;
+  }
+
+  .service-packages-title {
+    font-size: 30px;
+  }
+  .package-number {
+    font-size: 32px;
+  }
+  .package-heading {
+    font-size: 20px;
+  }
+  .package-content p {
+    font-size: 16px;
+  }
+
+  .process-title {
+    font-size: 30px;
+  }
+  .step-number {
+    font-size: 32px;
+  }
+  .step-description {
+    font-size: 17px;
+  }
+
+  .criteria-title {
+    font-size: 30px;
+  }
+  .criteria-list li {
+    font-size: 17px;
+    margin-bottom: 17px;
+    padding-left: 30px;
+  }
+  .criteria-list li::before {
+    font-size: 24px;
+  }
+
+  .frequency-title,
+  .conclusion-title {
+    font-size: 30px;
+  }
+  .frequency-list li {
+    font-size: 17px;
+    margin-bottom: 17px;
+    padding-left: 30px;
+  }
+  .frequency-list li::before {
+    font-size: 24px;
+  }
+  .frequency-note,
+  .conclusion-text {
+    font-size: 17px;
+  }
+}
+
+/* For Horizontal Phones / Small Tablets (>= 576px) */
+@media (min-width: 576px) {
+  .intro-section p,
+  .description-section p {
+    font-size: 17.5px;
+  }
+  .title-section h2 {
+    font-size: 34px;
+  }
+
+  .benefits-title {
+    font-size: 32px;
+  }
+  .benefit-number {
+    font-size: 34px;
+  }
+  .benefit-heading {
+    font-size: 21px;
+  }
+  .benefit-content p {
+    font-size: 16.5px;
+  }
+
+  .service-packages-title {
+    font-size: 32px;
+  }
+  .package-number {
+    font-size: 34px;
+  }
+  .package-heading {
+    font-size: 21px;
+  }
+  .package-content p {
+    font-size: 16.5px;
+  }
+
+  .process-title {
+    font-size: 32px;
+  }
+  .step-number {
+    font-size: 34px;
+  }
+  .step-description {
+    font-size: 17.5px;
+  }
+
+  .criteria-title {
+    font-size: 32px;
+  }
+  .criteria-list li {
+    font-size: 17.5px;
+    margin-bottom: 18px;
+    padding-left: 32px;
+  }
+  .criteria-list li::before {
+    font-size: 26px;
+  }
+
+  .frequency-title,
+  .conclusion-title {
+    font-size: 32px;
+  }
+  .frequency-list li {
+    font-size: 17.5px;
+    margin-bottom: 18px;
+    padding-left: 32px;
+  }
+  .frequency-list li::before {
+    font-size: 26px;
+  }
+  .frequency-note,
+  .conclusion-text {
+    font-size: 17.5px;
+  }
+}
+
+/* For Tablets (>= 768px) */
+@media (min-width: 768px) {
+  .intro-section p,
+  .description-section p {
+    font-size: 18px;
+  }
+  .title-section h2 {
+    font-size: 38px;
+    text-align: left; /* Align left on larger screens */
+  }
+
+  .benefits-title {
+    font-size: 36px;
+    text-align: left; /* Căn trái trên tablet và desktop */
+  }
+  .benefit-item {
+    margin-bottom: 30px;
+  }
+  .benefit-number {
+    font-size: 38px;
+    margin-right: 25px;
+    width: 50px; /* Tăng chiều rộng cho số */
+  }
+  .benefit-heading {
+    font-size: 22px;
+  }
+  .benefit-content p {
+    font-size: 17px;
+  }
+
+  .service-packages-title {
+    font-size: 36px;
+    text-align: left; /* Align left on larger screens */
+  }
+  .service-package-item {
+    margin-bottom: 30px;
+  }
+  .package-number {
+    font-size: 38px;
+    margin-right: 25px;
+    width: 50px;
+  }
+  .package-heading {
+    font-size: 22px;
+  }
+  .package-content p {
+    font-size: 17px;
+  }
+
+  .process-title {
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 35px;
+  }
+  .step-number {
+    font-size: 38px;
+    margin-right: 25px;
+    width: 50px;
+  }
+  .step-description {
+    font-size: 18px;
+  }
+
+  .criteria-title {
+    font-size: 36px;
+    text-align: left; /* Căn trái trên tablet và desktop */
+    margin-bottom: 35px;
+  }
+  .criteria-list li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 35px;
+  }
+  .criteria-list li::before {
+    font-size: 28px;
+  }
+
+  .frequency-title,
+  .conclusion-title {
+    font-size: 36px;
+    text-align: left; /* Căn trái trên tablet và desktop */
+    margin-bottom: 35px;
+  }
+  .frequency-list li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 35px;
+  }
+  .frequency-list li::before {
+    font-size: 28px;
+  }
+  .frequency-note,
+  .conclusion-text {
+    font-size: 18px;
+  }
+  .conclusion-section {
+    padding: 30px;
+  }
+}
+
+/* For Desktops (>= 992px) */
+@media (min-width: 992px) {
+  .intro-section p,
+  .description-section p {
+    font-size: 19px;
+  }
+  .title-section h2 {
+    font-size: 42px;
+  }
+
+  .benefits-title {
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+  .benefit-number {
+    font-size: 42px;
+    width: 60px;
+  }
+  .benefit-heading {
+    font-size: 24px;
+  }
+  .benefit-content p {
+    font-size: 18px;
+  }
+
+  .service-packages-title {
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+  .service-package-item {
+    margin-bottom: 35px;
+  }
+  .package-number {
+    font-size: 42px;
+    width: 60px;
+  }
+  .package-heading {
+    font-size: 24px;
+  }
+  .package-content p {
+    font-size: 18px;
+  }
+
+  .process-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .step-number {
+    font-size: 42px;
+    width: 60px;
+  }
+  .step-description {
+    font-size: 19px;
+  }
+
+  .criteria-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .criteria-list li {
+    font-size: 19px;
+    margin-bottom: 22px;
+    padding-left: 40px;
+  }
+  .criteria-list li::before {
+    font-size: 30px;
+  }
+
+  .frequency-title,
+  .conclusion-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .frequency-list li {
+    font-size: 19px;
+    margin-bottom: 22px;
+    padding-left: 40px;
+  }
+  .frequency-list li::before {
+    font-size: 30px;
+  }
+  .frequency-note,
+  .conclusion-text {
+    font-size: 19px;
+  }
+  .conclusion-section {
+    padding: 40px;
+  }
+}

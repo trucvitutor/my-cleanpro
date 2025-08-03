@@ -1,0 +1,464 @@
+.breadcrumb-section-sofa a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb-section-sofa a:hover {
+  color: #e50ed3; /* Màu vàng khi hover */
+}
+.breadcrumb-section-sofa {
+  background-color: #0e612f;
+  color: #dfe9ef;
+  padding: 0px 20px;
+}
+/* src/SofaCleaning.css */
+
+/* -------------------- Base Styles (Mobile First - Default) -------------------- */
+/*
+ * File: SofaCleaning.css
+ * Mô tả: File CSS cho trang Dịch Vụ Giặt Ghế Sofa, bao gồm responsive design.
+ * breakpoints:
+ * - Mobile First (mặc định): < 576px
+ * - Small devices (điện thoại ngang, tablet nhỏ): >= 576px
+ * - Medium devices (tablet, laptop nhỏ): >= 768px
+ * - Large devices (laptop, desktop): >= 992px
+ * - Extra large devices (desktop lớn): >= 1200px
+ */
+
+/* -------------------- Base Styles (Mobile First - Dưới 576px) -------------------- */
+.full-sofa-cleaning-layout {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước */
+}
+
+/* Breadcrumb Section */
+.breadcrumb-section {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.breadcrumb-section-sofa {
+  max-width: 95%; /* Giới hạn chiều rộng cho mobile */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Xếp dọc trên mobile */
+  align-items: flex-start;
+}
+
+.breadcrumb-section-sofa h2 {
+  font-size: 1.5em; /* Kích thước chữ nhỏ hơn cho mobile */
+  margin-bottom: 5px;
+  color: #7fe792;
+  padding: 0px 50px;
+}
+
+.breadcrumb-section-sofa p {
+  font-size: 0.9em;
+  color: #666;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.breadcrumb-section-sofa .home-icon {
+  margin-right: 5px;
+}
+
+.breadcrumb-section-sofa a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.breadcrumb-section-sofa a:hover {
+  text-decoration: underline;
+}
+
+/* Page Main Content Area - Vùng chứa nội dung chính */
+.page-main-content-area {
+  max-width: 95%; /* Giới hạn chiều rộng cho mobile */
+  margin: 20px auto;
+  padding: 0 10px; /* Giảm padding ngang cho mobile */
+}
+
+/* Sofa Main Banner with Contact */
+.sofa-main-banner-with-contact {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sofa-main-banner-with-contact .main-sofa-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Bo góc ảnh */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.sofa-main-banner-with-contact .banner-subtext {
+  font-size: 1em; /* Kích thước chữ nhỏ hơn cho mobile */
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Intro Text Section */
+.intro-text-section {
+  margin-bottom: 30px;
+  padding: 15px 50px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.intro-text-section p {
+  margin-bottom: 1em;
+  line-height: 1.7;
+  color: #444;
+  padding: 0px 50px;
+}
+
+.intro-text-section p strong {
+  color: #e44d26; /* Màu nổi bật cho bold text */
+}
+
+/* Top Page Header (Tiêu đề lớn + mô tả từ ảnh cũ hơn) */
+.top-page-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 10px; /* Giảm padding ngang cho mobile */
+}
+
+.top-page-header h1 {
+  font-size: 1.4em; /* Kích thước chữ nhỏ hơn cho mobile */
+  font-weight: bold;
+  color: #1a5276;
+  margin-bottom: 10px;
+  padding: 0px 60px;
+}
+
+.top-page-header p {
+  font-size: 0.95em; /* Kích thước chữ nhỏ hơn cho mobile */
+  line-height: 1.6;
+  color: #555;
+  max-width: 80%; /* Giảm max-width cho mobile */
+  margin: 0 auto;
+  padding: 0px 100px;
+}
+
+/* Table of Contents Section (Mục lục) */
+.table-of-contents-section {
+  margin-bottom: 40px;
+}
+
+.table-of-contents-section h3 {
+  font-size: 1.4em; /* Kích thước chữ nhỏ hơn cho mobile */
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center; /* Căn giữa tiêu đề mục lục */
+}
+
+.contents-box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contents-box h4 {
+  font-size: 1.1em; /* Kích thước chữ nhỏ hơn cho mobile */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contents-box .hide-button {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: normal; /* Đảm bảo không bị bold */
+}
+
+.contents-box ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.contents-box ol ol {
+  /* Danh sách con */
+  list-style-type: lower-alpha;
+  margin-left: 15px; /* Điều chỉnh lại indent cho danh sách con */
+  margin-top: 5px;
+}
+
+.contents-box li {
+  margin-bottom: 5px;
+}
+
+.contents-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contents-box a:hover {
+  text-decoration: underline;
+}
+
+/* Article Content Sections */
+.article-section {
+  /* Class chung cho các phần nội dung bài viết */
+  margin-bottom: 40px;
+}
+
+.article-section h2 {
+  font-size: 1.8em; /* Kích thước chữ nhỏ hơn cho mobile */
+  margin-bottom: 15px;
+  color: #1a5276;
+  padding: 0px 80px;
+}
+
+.article-section h3 {
+  /* Style cho sub-heading như 2.1 */
+  font-size: 1.4em; /* Kích thước chữ nhỏ hơn cho mobile */
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #1a5276;
+  padding: 0px 80px;
+}
+
+.article-section p {
+  line-height: 1.7;
+  margin-bottom: 10px;
+  color: #444;
+  padding: 0px 90px;
+}
+
+/* Price Table */
+.price-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.9em; /* Kích thước chữ nhỏ hơn cho mobile */
+  overflow-x: auto; /* Cho phép cuộn ngang bảng trên màn hình nhỏ */
+  display: block; /* Cần display: block để overflow-x hoạt động */
+  white-space: nowrap; /* Ngăn chặn văn bản trong ô bị xuống dòng */
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  min-width: 120px; /* Đảm bảo chiều rộng tối thiểu cho cột */
+  white-space: normal; /* Cho phép văn bản trong ô xuống dòng */
+}
+
+.price-table th {
+  background-color: #0a871f; /* Màu đỏ cam như trong ảnh */
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.price-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.price-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* -------------------- Responsive Breakpoints (4 media queries) -------------------- */
+
+/* 1. Small devices (phones in landscape, tablets in portrait, 576px and up) */
+@media (min-width: 576px) {
+  .breadcrumb-section-sofa {
+    max-width: 90%;
+    flex-direction: row; /* Trở lại xếp ngang */
+    justify-content: space-between; /* Căn giữa nội dung */
+    align-items: center;
+  }
+  .breadcrumb-section-sofa h2 {
+    font-size: 1.8em;
+  }
+  .breadcrumb-section-sofa p {
+    font-size: 1em;
+  }
+
+  .page-main-content-area {
+    max-width: 90%;
+    padding: 0 15px;
+  }
+  .sofa-main-banner-with-contact .banner-subtext {
+    font-size: 1.1em;
+  }
+  .top-page-header h1 {
+    font-size: 2.5em;
+  }
+  .top-page-header p {
+    font-size: 1em;
+    max-width: 700px;
+  }
+  .table-of-contents-section h3 {
+    font-size: 1.5em;
+  }
+  .contents-box h4 {
+    font-size: 1.2em;
+  }
+  .article-section h2 {
+    font-size: 2em;
+  }
+  .article-section h3 {
+    font-size: 1.5em;
+  }
+  .price-table {
+    font-size: 1em;
+  }
+  .intro-text-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+}
+@media (min-width: 476px) {
+  .intro-text-section {
+    margin-bottom: 30px;
+    padding: 15px 50px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+}
+/* 2. Medium devices (tablets in landscape, small laptops, 768px and up) */
+@media (min-width: 768px) {
+  .breadcrumb-section-sofa {
+    max-width: 85%;
+  }
+  .breadcrumb-section-sofa h2 {
+    font-size: 2em;
+  }
+
+  .page-main-content-area {
+    max-width: 85%;
+    padding: 0 20px;
+  }
+  .sofa-main-banner-with-contact .banner-subtext {
+    font-size: 1.2em;
+  }
+  .top-page-header h1 {
+    font-size: 3em;
+  }
+  .top-page-header p {
+    font-size: 1.1em;
+    max-width: 800px;
+  }
+  .table-of-contents-section h3 {
+    font-size: 1.6em;
+  }
+  .contents-box h4 {
+    font-size: 1.3em;
+  }
+  .article-section h2 {
+    font-size: 2.2em;
+  }
+  .article-section h3 {
+    font-size: 1.6em;
+  }
+  .intro-text-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* 3. Large devices (laptops, desktops, 992px and up) */
+@media (min-width: 992px) {
+  .breadcrumb-section {
+    padding: 20px;
+  }
+  .breadcrumb-section-sofa {
+    max-width: 1000px; /* Cố định chiều rộng cho desktop */
+  }
+  .breadcrumb-section-sofa h2 {
+    font-size: 2.2em;
+  }
+
+  .page-main-content-area {
+    max-width: 1000px; /* Cố định chiều rộng cho desktop */
+    padding: 0; /* Bỏ padding ngang khi max-width đã cố định */
+  }
+  .sofa-main-banner-with-contact .banner-subtext {
+    font-size: 1.3em;
+  }
+  .top-page-header h1 {
+    font-size: 3.5em;
+  }
+  .top-page-header p {
+    font-size: 1.2em;
+    max-width: 900px;
+  }
+  .table-of-contents-section h3 {
+    font-size: 1.7em;
+  }
+  .contents-box h4 {
+    font-size: 1.4em;
+  }
+  .article-section h2 {
+    font-size: 2.4em;
+  }
+  .article-section h3 {
+    font-size: 1.7em;
+  }
+  .intro-text-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* 4. Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .breadcrumb-section-sofa,
+  .page-main-content-area {
+    max-width: 10000px; /* Mở rộng thêm cho màn hình lớn hơn */
+  }
+  .sofa-main-banner-with-contact .banner-subtext {
+    font-size: 1.4em;
+  }
+  .top-page-header h1 {
+    font-size: 4em;
+  }
+  .top-page-header p {
+    font-size: 1.3em;
+    max-width: 1000px;
+  }
+  .table-of-contents-section h3 {
+    font-size: 1.8em;
+  }
+  .contents-box h4 {
+    font-size: 1.5em;
+  }
+  .article-section h2 {
+    font-size: 2.6em;
+  }
+  .article-section h3 {
+    font-size: 1.8em;
+  }
+}
