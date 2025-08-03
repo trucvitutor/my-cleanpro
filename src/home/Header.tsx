@@ -120,26 +120,30 @@ const Header: React.FC = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <a
-                  href="/dich-vu-ve-sinh"
+                  href="/my-cleanpro/dich-vu-ve-sinh"
                   onClick={(e) => handleDropdownClick("ve-sinh", e)}
                 >
                   DỊCH VỤ VỆ SINH <i className="fas fa-caret-down"></i>
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="/ve-sinh-cong-nghiep">Vệ sinh công nghiệp</a>
+                    <a href="/my-cleanpro/ve-sinh-cong-nghiep">
+                      Vệ sinh công nghiệp
+                    </a>
                   </li>
                   <li>
-                    <a href="/ve-sinh-nha-o">Vệ sinh nhà ở</a>
+                    <a href="/my-cleanpro/ve-sinh-nha-o">Vệ sinh nhà ở</a>
                   </li>
                   <li>
-                    <a href="/ve-sinh-sau-xay-dung">Vệ sinh sau xây dựng</a>
+                    <a href="/my-cleanpro/ve-sinh-sau-xay-dung">
+                      Vệ sinh sau xây dựng
+                    </a>
                   </li>
                   <li>
-                    <a href="/dich-vu-ve-sinh/ve-sinh-kinh">Vệ sinh kính</a>
+                    <a href="/my-cleanpro/ve-sinh-kinh">Vệ sinh kính</a>
                   </li>
                   <li>
-                    <a href="/ve-sinh-cong-nghiep-dinh-ki">
+                    <a href="/my-cleanpro/ve-sinh-cong-nghiep-dinh-ki">
                       Vệ sinh công nghiệp định kỳ
                     </a>
                   </li>
@@ -155,35 +159,35 @@ const Header: React.FC = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <a
-                  href="/dich-vu-giat-ui"
+                  href="/my-cleanpro/dich-vu-giat-ui"
                   onClick={(e) => handleDropdownClick("giat-ui", e)}
                 >
                   DỊCH VỤ GIẶT ỦI <i className="fas fa-caret-down"></i>
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="/ve-sinh-rem">Giặt thảm</a>
+                    <a href="/my-cleanpro/ve-sinh-rem">Giặt thảm</a>
                   </li>
                   <li>
-                    <a href="/giat-ghe-sofa">Giặt ghế sofa</a>
+                    <a href="/my-cleanpro/giat-ghe-sofa">Giặt ghế sofa</a>
                   </li>
                   <li>
-                    <a href="/ve-sinh-rem">Giặt nệm</a>
+                    <a href="/my-cleanpro/ve-sinh-rem">Giặt nệm</a>
                   </li>
                   <li>
-                    <a href="/ve-sinh-rem">Giặt rèm</a>
+                    <a href="/my-cleanpro/ve-sinh-rem">Giặt rèm</a>
                   </li>
                 </ul>
               </li>
 
               <li>
-                <a href="/du-an">DỰ ÁN</a>
+                <a href="/my-cleanpro/du-an">DỰ ÁN</a>
               </li>
               <li>
-                <a href="/tin-tuc">TIN TỨC</a>
+                <a href="/my-cleanpro/tin-tuc">TIN TỨC</a>
               </li>
               <li>
-                <a href="/lien-he" className="contact-button">
+                <a href="/my-cleanpro/lien-he" className="contact-button">
                   LIÊN HỆ
                 </a>
               </li>
