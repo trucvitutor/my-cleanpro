@@ -63,7 +63,7 @@ const Homepage: React.FC = () => {
       imageUrl: home2,
       title: "Dịch vụ đánh sàn",
       description:
-        "Đánh bóng và làm sạch sàn chuyên nghiệp, giúp bề mặt sàn sáng bóng, bền đẹp và nâng cao thẩm mỹ cho không gian.",
+        "Đánh Sàn và làm sạch sàn chuyên nghiệp, giúp bề mặt sàn sáng bóng, bền đẹp và nâng cao thẩm mỹ cho không gian.",
       link: "/ve-sinh-cong-nghiep-dinh-ki",
     },
     {
@@ -270,7 +270,7 @@ const Homepage: React.FC = () => {
         <p>– Giá cả minh bạch, không phát sinh</p>
         <h4>
           Dù bạn cần tổng vệ sinh định kỳ, làm sạch sau xây dựng hay duy trì
-          không gian làm việc sạch sẽ mỗi ngày, Clean Dragon luôn sẵn sàng đồng
+          không gian làm việc sạch sẽ mỗi ngày, Clean Pro luôn sẵn sàng đồng
           hành.
         </h4>
         <h1>CLEAN PRO – Sạch từng chi tiết , phục vụ tận tâm! </h1>
