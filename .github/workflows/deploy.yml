@@ -22,12 +22,12 @@ jobs:
         run: npm install
 
       - name: Build project 🏗️ # Bước build dự án Vite/React của bạn (npm run build)
-        run: npm run build
+        run: npm run build --base=/ # <-- SỬA DÒNG NÀY
 
       - name: Deploy to GitHub Pages 🚀 # Bước triển khai lên GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GH_PAT_FOR_DEPLOY }} # <-- ĐÃ THAY THẾ BẰNG PAT CỦA BẠN
+          github_token: ${{ secrets.GH_PAT_FOR_DEPLOY }}
           publish_dir: ./dist
-          cname: dichvoesinhleanpro.id.vn
+          cname: dichvuesinhleanpro.id.vn
           enable_jekyll: false
