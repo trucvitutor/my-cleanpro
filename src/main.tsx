@@ -21,7 +21,7 @@ import SofaCleaning from "./laundry/SofaCleaning.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename="/my-cleanpro">
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
