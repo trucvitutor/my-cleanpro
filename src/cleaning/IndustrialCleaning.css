@@ -324,7 +324,7 @@
     font-size: 15px;
   }
   .benefits-list li strong {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 
@@ -359,7 +359,7 @@
   }
 
   .benefits-list li strong {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .call-button {
@@ -410,7 +410,7 @@
   }
 
   .benefits-list li strong {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .call-button {
@@ -438,6 +438,7 @@
     font-size: 18px;
     margin-top: 15px;
     margin-bottom: 10px;
+    padding: 0px 60px;
   }
 
   .text-section p,
@@ -449,11 +450,13 @@
   .trusted-provider-intro,
   .trusted-provider-list li,
   .conclusion-text {
-    font-size: 12px;
+    font-size: 17px;
+    padding: 0px 100px;
   }
 
   .benefits-list li strong {
-    font-size: 14px;
+    font-size: 17px;
+    padding: 0px 100px;
   }
 
   .call-button {
@@ -472,6 +475,12 @@
   .trusted-provider-list li {
     margin-bottom: 5px;
   }
+  .breadcrumb-content-indus h2 {
+    padding: 0px 70px;
+  }
+  .breadcrumb-content-indus p {
+    padding: 0px 60px;
+  }
 }
 
 /* For screens smaller than 365px */
@@ -480,7 +489,7 @@
     padding: 8px;
   }
   .breadcrumb-content-indus h2 {
-    padding: 0px 50px;
+    padding: 0px 70px;
   }
   .breadcrumb-content-indus p {
     padding: 0px 60px;
@@ -508,12 +517,12 @@
   .trusted-provider-list li,
   .conclusion-text {
     font-size: 11px; /* Slightly smaller text for very small screens */
-    padding: 0px 100px;
+    padding: 0px 140px;
   }
 
   .benefits-list li strong {
     font-size: 13px;
-    padding: 0px 80px;
+    padding: 0px 100px;
   }
 
   .call-button {

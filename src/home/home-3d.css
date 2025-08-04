@@ -362,7 +362,7 @@ body {
 .content-container h4 {
   font-size: 1.1em;
   color: #555;
-  padding: 0px 90px;
+  padding: 0px 120px;
 }
 
 /* CSS cho hotline button (đã di chuyển lên trên cùng của content-container block để không bị trùng lặp) */
@@ -445,15 +445,15 @@ body {
   }
   .content-container h1 {
     font-size: 1.5em; /* Giảm mạnh h1 trên mobile nhỏ */
-    padding: 0px 20px;
+    padding: 0px 100px;
   }
   .content-container h3 {
     font-size: 1em; /* Giảm mạnh h3 trên mobile nhỏ */
-    padding: 0px 40px 0px 40px;
+    padding: 0px 80px;
   }
   .content-container p {
     font-size: 0.85em; /* Giảm mạnh p trên mobile nhỏ */
-    padding: 0px 30px 0px 30px;
+    padding: 0px 100px;
   }
   .hotline-home {
     font-size: 0.9em; /* Giảm kích thước button */
@@ -466,15 +466,15 @@ body {
 @media (max-width: 360px) {
   .content-container h1 {
     font-size: 1.3em;
-    padding: 0px 80px;
+    padding: 0px 100px;
   }
   .content-container h3 {
     font-size: 0.9em;
-    padding: 0px 90px;
+    padding: 0px 130px;
   }
   .content-container p {
     font-size: 0.8em;
-    padding: 0px 90px;
+    padding: 0px 120px;
   }
 }
 

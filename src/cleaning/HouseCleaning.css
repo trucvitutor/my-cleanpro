@@ -13,6 +13,12 @@
   color: #dfe9ef;
   padding: 60px;
 }
+.breadcrumb-content-house h2 {
+  padding: 0px 100px;
+}
+.breadcrumb-content-house p {
+  padding: 0px 100px;
+}
 
 /* General Container */
 .house-cleaning-container {
@@ -43,6 +49,7 @@
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center; /* Center on mobile */
+  padding: 0px 100px;
 }
 
 .description-section p {
@@ -108,12 +115,14 @@
   color: #333;
   font-weight: bold;
   margin-bottom: 5px;
+  padding: 0px 80px;
 }
 
 .benefit-content p {
   font-size: 15px; /* Kích thước font cho mô tả lợi ích */
   line-height: 1.6;
   text-align: justify;
+  padding: 0px 80px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -130,6 +139,7 @@
   font-weight: bold;
   margin-bottom: 25px;
   text-align: center; /* Căn giữa trên di động */
+  padding: 0px 100px;
 }
 
 .service-package-item {
@@ -157,12 +167,14 @@
   color: #333;
   font-weight: bold;
   margin-bottom: 5px;
+  padding: 0px 100px;
 }
 
 .package-content p {
   font-size: 15px;
   line-height: 1.6;
   text-align: justify;
+  padding: 0px 100px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -179,12 +191,14 @@
   font-weight: bold;
   margin-bottom: 25px;
   text-align: center;
+  padding: 0px 100px;
 }
 
 .process-step {
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px; /* Khoảng cách giữa các bước */
+  padding: 0px 100px;
 }
 
 .step-number {
@@ -218,11 +232,12 @@
   font-weight: bold;
   margin-bottom: 25px;
   text-align: center; /* Căn giữa trên di động */
+  padding: 0px 100px;
 }
 
 .criteria-list {
   list-style-type: none; /* Loại bỏ dấu chấm mặc định của list */
-  padding: 0; /* Loại bỏ padding mặc định */
+  padding: 0px 100px; /* Loại bỏ padding mặc định */
   margin: 0; /* Loại bỏ margin mặc định */
 }
 
@@ -265,6 +280,7 @@
   font-weight: bold;
   margin-bottom: 25px;
   text-align: center;
+  padding: 0px 100px;
 }
 
 .frequency-list {
@@ -298,6 +314,7 @@
   color: #555;
   margin-top: 25px;
   text-align: justify;
+  padding: 0px 100px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -516,6 +533,14 @@
   .frequency-note,
   .conclusion-text {
     font-size: 17px;
+  }
+  .intro-section p,
+  .why-clean-section p,
+  .conclusion-section p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 0.95em;
+    padding: 0px 100px;
   }
 }
 
