@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.jpg";
-import "./Header.css";
-
+import "./header.css";
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);

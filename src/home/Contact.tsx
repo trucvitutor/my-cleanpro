@@ -11,11 +11,11 @@ export const Contact = () => {
         <div className="contact-details">
           <p className="contact-person">
             <FaPhoneAlt className="contact-icon" /> Ms NHƯ:{" "}
-            <a href="tel:0912396747">0912.396.747</a>
+            <a href="tel:0912396747">0799140355</a>
           </p>
           <p className="contact-person">
             <FaPhoneAlt className="contact-icon" /> Mr HƯNG:{" "}
-            <a href="tel:0989225989">0989.225.989</a>
+            <a href="tel:0989225989">0903540585</a>
           </p>
         </div>
       </div>
