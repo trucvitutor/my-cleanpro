@@ -5,6 +5,9 @@ on:
     branches:
       - main # Kích hoạt workflow mỗi khi có push lên nhánh 'main'
 
+permissions:
+  contents: write # <-- ĐÃ THÊM DÒNG NÀY ĐỂ CẤP QUYỀN
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # Chạy trên môi trường Ubuntu
@@ -14,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Node.js 🚀 # Bước cài đặt Node.js
-        uses: actions/setup-node@v4 # <-- ĐÃ SỬA THÀNH v4
+        uses: actions/setup-node@v4
         with:
           node-version: "20"
 
