@@ -27,10 +27,9 @@ jobs:
       - name: Build project 🏗️ # Bước build dự án Vite/React của bạn (npm run build)
         run: npm run build
 
-      - name: Deploy to GitHub Pages 🚀 # Bước triển khai lên GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4 # Sử dụng action của bên thứ ba để deploy
+      - name: Deploy to GitHub Pages 🚀
+        uses: actions/deploy-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # Token mặc định của GitHub
-          publish_dir: ./dist # Thư mục chứa các tệp đã build của Vite
-          cname: dichvoesinhleanpro.id.vn # <-- RẤT QUAN TRỌNG: Đặt tên miền riêng của bạn vào đây
-          enable_jekyll: false # <-- RẤT QUAN TRỌNG: Vô hiệu hóa Jekyll để sửa lỗi MIME type
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          cname: dichvoesinhleanpro.id.vn
