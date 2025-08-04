@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter, Route, Routes } from "react-router-dom"; // đổi BrowserRouter → HashRouter
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import CleaningServices from "./cleaning-services/CleaningServices.tsx";
 import FloatingContact from "./home/FloatingContact.tsx";
@@ -21,9 +21,7 @@ import SofaCleaning from "./laundry/SofaCleaning.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <HashRouter>
-      {" "}
-      {/* dùng HashRouter để tránh lỗi reload 404 trên GitHub Pages */}
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -39,9 +37,10 @@ createRoot(document.getElementById("root")!).render(
         />
         <Route path="/ve-sinh-rem" element={<MattressCleaning />} />
         <Route path="/lien-he" element={<Contact />} />
+        {/* Route mới */}
       </Routes>
       <FloatingContact />
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>
 );

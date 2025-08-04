@@ -155,7 +155,7 @@ const Header: React.FC = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <a
-                  href="/my-cleanpro/dich-vu-giat-ui"
+                  href="/dich-vu-giat-ui"
                   onClick={(e) => handleDropdownClick("giat-ui", e)}
                 >
                   DỊCH VỤ GIẶT ỦI <i className="fas fa-caret-down"></i>
