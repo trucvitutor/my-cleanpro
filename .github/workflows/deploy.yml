@@ -29,5 +29,5 @@ jobs:
         with:
           github_token: ${{ secrets.GH_PAT_FOR_DEPLOY }}
           publish_dir: ./dist
-          cname: dichvuesinhcleanpro.id.vn
+          cname: dichvuvesinhcleanpro.id.vn
           enable_jekyll: false
