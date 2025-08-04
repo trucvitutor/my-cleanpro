@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages # Tên của workflow, sẽ hiển thị trong tab Actions
+
+on:
+  push:
+    branches:
+      - main # Kích hoạt workflow mỗi khi có push lên nhánh 'main'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Chạy trên môi trường Ubuntu
+
+    steps:
+      - name: Checkout 🛎️ # Bước lấy code từ repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 🚀 # Bước cài đặt Node.js
+        uses: actions/setup-node@v20 # Sử dụng Node.js version 20
+        with:
+          node-version: "20"
+
+      - name: Install dependencies 📦 # Bước cài đặt các gói phụ thuộc (npm install)
+        run: npm install
+
+      - name: Build project 🏗️ # Bước build dự án Vite/React của bạn (npm run build)
+        run: npm run build
+
+      - name: Deploy to GitHub Pages 🚀 # Bước triển khai lên GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4 # Sử dụng action của bên thứ ba để deploy
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Token mặc định của GitHub
+          publish_dir: ./dist # Thư mục chứa các tệp đã build của Vite
+          cname: dichvoesinhleanpro.id.vn # <-- RẤT QUAN TRỌNG: Đặt tên miền riêng của bạn vào đây
+          enable_jekyll: false # <-- RẤT QUAN TRỌNG: Vô hiệu hóa Jekyll để sửa lỗi MIME type
