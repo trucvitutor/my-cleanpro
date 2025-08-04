@@ -5,9 +5,6 @@ on:
     branches:
       - main # Kích hoạt workflow mỗi khi có push lên nhánh 'main'
 
-permissions:
-  contents: write # <-- ĐÃ THÊM DÒNG NÀY ĐỂ CẤP QUYỀN
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # Chạy trên môi trường Ubuntu
@@ -27,9 +24,10 @@ jobs:
       - name: Build project 🏗️ # Bước build dự án Vite/React của bạn (npm run build)
         run: npm run build
 
-      - name: Deploy to GitHub Pages 🚀
-        uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages 🚀 # Bước triển khai lên GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_PAT_FOR_DEPLOY }} # <-- ĐÃ THAY THẾ BẰNG PAT CỦA BẠN
           publish_dir: ./dist
           cname: dichvoesinhleanpro.id.vn
+          enable_jekyll: false
