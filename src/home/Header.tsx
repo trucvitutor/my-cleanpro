@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 import "./header.css";
 const Header: React.FC = () => {
@@ -126,21 +127,28 @@ const Header: React.FC = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="/ve-sinh-cong-nghiep">Vệ sinh công nghiệp</a>
+                    {/* <a href="/ve-sinh-cong-nghiep">Vệ sinh công nghiệp</a> */}
+                    <Link to="/ve-sinh-cong-nghiep">Vệ sinh công nghiệp</Link>
                   </li>
                   <li>
-                    <a href="/ve-sinh-nha-o">Vệ sinh nhà ở</a>
+                    {/* <a href="/ve-sinh-nha-o">Vệ sinh nhà ở</a> */}
+                    <Link to="/ve-sinh-nha-o">Vệ sinh nhà ở</Link>
                   </li>
                   <li>
-                    <a href="/ve-sinh-sau-xay-dung">Vệ sinh sau xây dựng</a>
+                    {/* <a href="/ve-sinh-sau-xay-dung">Vệ sinh sau xây dựng</a> */}
+                    <Link to="/ve-sinh-sau-xay-dung">Vệ sinh sau xây dựng</Link>
                   </li>
                   <li>
-                    <a href="/ve-sinh-kinh">Vệ sinh kính</a>
+                    {/* <a href="/ve-sinh-kinh">Vệ sinh kính</a> */}
+                    <Link to="/ve-sinh-kinh">Vệ sinh kính</Link>
                   </li>
                   <li>
-                    <a href="/ve-sinh-cong-nghiep-dinh-ki">
+                    {/* <a href="/ve-sinh-cong-nghiep-dinh-ki">
                       Vệ sinh công nghiệp định kỳ
-                    </a>
+                    </a> */}
+                    <Link to="/ve-sinh-cong-nghiep-dinh-ki">
+                      Vệ sinh công nghiệp định kỳ
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -161,30 +169,45 @@ const Header: React.FC = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="/ve-sinh-rem">Giặt thảm</a>
+                    {/* <a href="/ve-sinh-rem">Giặt thảm</a> */}
+                    <Link to="/ve-sinh-rem">Giặt thảm</Link>
                   </li>
                   <li>
-                    <a href="/giat-ghe-sofa">Giặt ghế sofa</a>
+                    {/* <a href="/giat-ghe-sofa">Giặt ghế sofa</a> */}
+                    <Link to="/giat-ghe-sofa">Giặt ghế sofa</Link>
                   </li>
                   <li>
-                    <a href="/ve-sinh-rem">Giặt nệm</a>
+                    {/* <a href="/ve-sinh-rem">Giặt nệm</a> */}
+                    <Link to="/ve-sinh-rem">Giặt nệm</Link>
                   </li>
                   <li>
-                    <a href="/ve-sinh-rem">Giặt rèm</a>
+                    {/* <a href="/ve-sinh-rem">Giặt rèm</a> */}
+                    <Link to="/ve-sinh-rem">Giặt rèm</Link>
                   </li>
                 </ul>
               </li>
 
               <li>
-                <a href="/du-an">DỰ ÁN</a>
+                {/* <a href="/du-an">DỰ ÁN</a> */}
+                <Link to="/du-an">DỰ ÁN</Link>
               </li>
               <li>
-                <a href="/tin-tuc">TIN TỨC</a>
+                {/* <a href="/tin-tuc">TIN TỨC</a> */}
+                <Link to="/tin-tuc">TIN TỨC</Link>
               </li>
               <li>
-                <a href="/lien-he" className="contact-button">
+                {/* <a href="/lien-he" className="contact-button">
                   LIÊN HỆ
-                </a>
+                </a> */}
+                <Link to="/lien-he" className="contact-button">
+                  {" "}
+                  LIÊN HỆ
+                </Link>
+                {/* <div className="button-thoat">
+                  <button onClick={toggleMenu}>
+                    <i>X</i>
+                  </button>
+                </div> */}
               </li>
             </ul>
           </nav>
