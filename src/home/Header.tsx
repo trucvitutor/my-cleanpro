@@ -80,10 +80,10 @@ const Header: React.FC = () => {
           </div>
           <div className="contact-info-header">
             <span className="contact-item phone">
-              <i className="fas fa-phone-alt"></i> 0912396747
+              <i className="fas fa-phone-alt"></i> 0799140355
             </span>
             <span className="contact-item email">
-              <i className="fas fa-envelope"></i> dinhvatthanht@gmail.com
+              <i className="fas fa-envelope"></i> Mail.lemynhu2606@gmail.com
             </span>
           </div>
         </div>
