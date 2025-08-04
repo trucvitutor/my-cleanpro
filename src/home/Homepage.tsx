@@ -80,7 +80,7 @@ const Homepage: React.FC = () => {
       title: "Vệ sinh Kính",
       description:
         "Lau chùi, làm sạch kính trong và ngoài, đảm bảo bề mặt sáng bóng, không vết ố, tăng tính thẩm mỹ cho công trình.",
-      link: "ve-sinh-kinh",
+      link: "/ve-sinh-kinh",
     },
     {
       id: 5,
